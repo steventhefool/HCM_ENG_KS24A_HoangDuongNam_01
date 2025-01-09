@@ -114,35 +114,31 @@ int main (){
 					break;
 				}
 				case 9: {
-                int foundPrime = 0;
-                for (int i = 0; i < n; i++) {
-                int num = a[i];
-                
-                if (num >= 2) {
-                int isPrime = 1;
-                for (int j = 2; j * j <= num; j++) {
-                if (num % j == 0) {
-                    isPrime = 0;
-                    break;
-                }
-            }
-
-                if (isPrime) {
-                printf("%d ", num);
-                foundPrime = 1;
-           	}
-      		  }
-   			}
-
+           			     int foundPrime = 0;
+           			     for (int i = 0; i < n; i++) {
+             			     int num = a[i];
+			             if (num >= 2) {
+                        		int isPrime = 1;
+           			        for (int j = 2; j * j <= num; j++) {
+         				       if (num % j == 0) {
+              					      isPrime = 0;
+              		             break;
+            			       	       }	
+         		            	}
+              			    if (isPrime) {
+             				printf("%d ", num);
+                			foundPrime = 1;
+           			    }
+      		  		    }
+   				    }
   				  if (!foundPrime) {
        					 printf("Mang khong co so nguyen to.\n");
   				  } 
 					else {
        				 printf("\n");
    				 }
-
-  						  break;
-				}
+  				 break;
+				 }
 				case 10:{
 						for (int i =0;i<n;i++){
 						int min_index=i;
