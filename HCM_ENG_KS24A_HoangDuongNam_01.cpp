@@ -122,7 +122,7 @@ int main (){
            			        for (int j = 2; j * j <= num; j++) {
          				       if (num % j == 0) {
               					      isPrime = 0;
-              		             break;
+              		            break;
             			       	       }	
          		            	}
               			    if (isPrime) {
